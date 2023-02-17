@@ -1,6 +1,7 @@
 .buttons {
     display: flexbox;
     margin: 5%;
+
 }
 
 .b1,
@@ -25,6 +26,9 @@
     color: white;
 }
 
+li{
+    list-style: none;
+}
 ul{
     left: 25%;
 }

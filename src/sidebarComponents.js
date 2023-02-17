@@ -24,17 +24,17 @@ function SideBar() {
     );
 }
 
-function Button(){
+function Button({step}){
  return (
     
     <div style={{ position: 'absolute', top: '33.5%', left: '4%', transform: 'translate(-50%, -50%)' }}>
-    <ul className="buttons" >
-        <div className="b1"><button className="button"><p className="buttonText">1</p></button></div>
-        <div className="b2"><button className="button"><p className="buttonText">2</p></button></div>
-        <div className="b3"><button className="button"><p className="buttonText">3</p></button></div>
-        <div className="b4"><button className="button"><p className="buttonText">4</p></button></div>
-    </ul>
-</div>
+        <ul className="buttons" >
+            <div className="b1"><button className="button"><p className="buttonText"><li className={step === 1 ? 'active': ''}>1</li></p></button></div>
+            <div className="b2"><button className="button"><p className="buttonText"><li className={step === 2 ? 'active': ''}>2</li></p></button></div>
+            <div className="b3"><button className="button"><p className="buttonText"><li className={step === 3 ? 'active' : ''}>3</li></p></button></div>
+            <div className="b4"><button className="button"><p className="buttonText"><li className={step === 4 ? 'active' : ''}>4</li></p></button></div>
+        </ul>
+    </div>
 
  )   
 }
