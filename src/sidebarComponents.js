@@ -3,7 +3,7 @@ import './SideBar.css';
 
 export default function ContainerBox () {
     return (
-        <div style={{position: 'relative'}}>
+        <div>
     <SideBar/>
     <Button/>
     <PlanDetails/>
@@ -23,6 +23,8 @@ function SideBar() {
     
     );
 }
+
+
 
 function Button({step}){
  return (

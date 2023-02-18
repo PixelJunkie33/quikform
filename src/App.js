@@ -26,6 +26,7 @@ function App() {
        <Signupform onSignup={handleSignup} step={step}/>
         
     </div>
+    
     </>
   );
 }
